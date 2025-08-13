@@ -26,10 +26,10 @@ public class MainMenu {
     public MainMenu() {
         mainFrame = new JFrame("Catacomb Digger - Main Menu");
         mainFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        mainFrame.setSize(800, 600);
+        mainFrame.setSize(1600, 900);
         mainFrame.setLocationRelativeTo(null);
 
-        actions.put("New Game", new NewGameAction());
+        actions.put("New Game", new NewGameAction(mainFrame));
         actions.put("Load Game", new LoadGameAction());
         actions.put("Quit", new QuitGameAction());
 
